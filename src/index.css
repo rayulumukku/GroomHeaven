@@ -1,0 +1,12 @@
+/* src/index.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.app {
+  padding-bottom: 60px; /* To ensure content is not hidden behind the fixed footer */
+}

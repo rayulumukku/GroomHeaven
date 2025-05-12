@@ -1,0 +1,121 @@
+.about-us-section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #2c3e50, #3498db);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.about-us-container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-us-container:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.about-us-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-us-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background: #3498db;
+  transition: width 0.4s ease;
+}
+
+.about-us-title:hover::after {
+  width: 70%;
+}
+
+.about-us-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-us-paragraph:hover {
+  color: #3498db;
+  transform: translateX(10px);
+}
+
+.about-us-button {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: #3498db;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-button:hover {
+  background: #2980b9;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .about-us-title {
+    font-size: 2rem;
+  }
+
+  .about-us-paragraph {
+    font-size: 1rem;
+  }
+
+  .about-us-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .about-us-title {
+    font-size: 1.75rem;
+  }
+
+  .about-us-paragraph {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+}
